@@ -1,0 +1,131 @@
+import java.util.*;
+
+public class Main {
+
+    static void dijkstra(int source, ArrayList<ArrayList<Edge>> graph, int[] dist) {
+        int V = graph.size();
+
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[source] = 0;
+
+        // Priority queue stores: {distance, vertex}
+        PriorityQueue<int[]> pq = new PriorityQueue<>(
+            Comparator.comparingInt(a -> a[0])
+        );
+
+        pq.offer(new int[]{0, source});
+
+        while (!pq.isEmpty()) {
+            int[] current = pq.poll();
+
+            int d = current[0];
+            int u = current[1];
+
+            // Skip outdated entry
+            if (d > dist[u]) {
+                continue;
+            }
+
+            for (Edge edge : graph.get(u)) {
+                int v = edge.vertex;
+                int w = edge.weight;
+
+                if (dist[v] > dist[u] + w) {
+                    dist[v] = dist[u] + w;
+                    pq.offer(new int[]{dist[v], v});
+                }
+            }
+        }
+    }
+
+    // Represents an edge
+    static class Edge {
+        int vertex;
+        int weight;
+
+        Edge(int vertex, int weight) {
+            this.vertex = vertex;
+            this.weight = weight;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int V, E;
+
+        System.out.print("Enter number of intersections (vertices): ");
+        V = sc.nextInt();
+
+        System.out.print("Enter number of roads (edges): ");
+        E = sc.nextInt();
+
+        // Create graph with V vertices
+        ArrayList<ArrayList<Edge>> graph = new ArrayList<>();
+
+        for (int i = 0; i < V; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        System.out.println("Enter edges (u v w):");
+
+        for (int i = 0; i < E; i++) {
+            int u = sc.nextInt();
+            int v = sc.nextInt();
+            int w = sc.nextInt();
+
+            // Undirected road
+            graph.get(u).add(new Edge(v, w));
+            graph.get(v).add(new Edge(u, w));
+        }
+
+        System.out.print("Enter ambulance start location (source): ");
+        int source = sc.nextInt();
+
+        System.out.print("Enter number of hospitals: ");
+        int H = sc.nextInt();
+
+        int[] hospitals = new int[H];
+
+        System.out.print("Enter hospital nodes: ");
+
+        for (int i = 0; i < H; i++) {
+            hospitals[i] = sc.nextInt();
+        }
+
+        // Run Dijkstra
+        int[] dist = new int[V];
+
+        dijkstra(source, graph, dist);
+
+        // Find nearest hospital
+        int minTime = Integer.MAX_VALUE;
+        int nearestHospital = -1;
+
+        for (int h : hospitals) {
+            if (dist[h] < minTime) {
+                minTime = dist[h];
+                nearestHospital = h;
+            }
+        }
+
+        if (nearestHospital == -1 ||
+            minTime == Integer.MAX_VALUE) {
+
+            System.out.println("No hospital reachable.");
+
+        } else {
+
+            System.out.println(
+                "Nearest hospital is at node " +
+                nearestHospital +
+                " with travel time " +
+                minTime +
+                " minutes."
+            );
+        }
+
+        sc.close();
+    }
+}
