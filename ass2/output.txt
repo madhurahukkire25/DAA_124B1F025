@@ -1,0 +1,28 @@
+PS C:\Users\gamer\OneDrive\Desktop\daa\Assignments\Assi2_QuickSort> java QuickSort      
+===== StreamFlix Movie Recommendation System =====
+1. Sort by IMDb Rating (Lowest First)
+2. Sort by Release Year (Oldest First)
+3. Sort by Popularity (Fewest Votes First)
+Enter your choice: 1
+
+Sorted Movies (Top 20):
+1. The Shawshank Redemption | Year: 1994 | IMDb Rating: 9.3 | Votes: 2343110
+2. The Godfather | Year: 1972 | IMDb Rating: 9.2 | Votes: 1620367
+3. The Dark Knight | Year: 2008 | IMDb Rating: 9.0 | Votes: 2303232
+4. The Godfather: Part II | Year: 1974 | IMDb Rating: 9.0 | Votes: 1129952
+5. 12 Angry Men | Year: 1957 | IMDb Rating: 9.0 | Votes: 689845
+6. The Lord of the Rings: The Return of the King | Year: 2003 | IMDb Rating: 8.9 | Votes: 1642758
+7. Pulp Fiction | Year: 1994 | IMDb Rating: 8.9 | Votes: 1826188
+8. Schindler's List | Year: 1993 | IMDb Rating: 8.9 | Votes: 1213505
+9. Inception | Year: 2010 | IMDb Rating: 8.8 | Votes: 2067042
+10. Fight Club | Year: 1999 | IMDb Rating: 8.8 | Votes: 1854740
+11. The Lord of the Rings: The Fellowship of the Ring | Year: 2001 | IMDb Rating: 8.8 | Votes: 1661481
+12. Forrest Gump | Year: 1994 | IMDb Rating: 8.8 | Votes: 1809221
+13. Il buono, il brutto, il cattivo | Year: 1966 | IMDb Rating: 8.8 | Votes: 688390
+14. The Lord of the Rings: The Two Towers | Year: 2002 | IMDb Rating: 8.7 | Votes: 1485555
+15. The Matrix | Year: 1999 | IMDb Rating: 8.7 | Votes: 1676426
+16. Goodfellas | Year: 1990 | IMDb Rating: 8.7 | Votes: 1020727
+17. Star Wars: Episode V - The Empire Strikes Back | Year: 1980 | IMDb Rating: 8.7 | Votes: 1159315
+18. One Flew Over the Cuckoo's Nest | Year: 1975 | IMDb Rating: 8.7 | Votes: 918088
+19. Hamilton | Year: 2020 | IMDb Rating: 8.6 | Votes: 55291
+20. Gisaengchung | Year: 2019 | IMDb Rating: 8.6 | Votes: 552778
