@@ -1,0 +1,7 @@
+ { javac FrationalKnapsack.java } ; if ($?) { java FrationalKnapsack }
+Item 0 is taken completely
+Item 4 is taken completely
+Item 2 is taken completely
+Item 1 is taken fractionally
+255
+PS C:\Users\gamer\OneDrive\Desktop\daa\Assignments\Assignment3> 
