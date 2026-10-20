@@ -1,0 +1,26 @@
+DISASTER RELIEF RESOURCE ALLOCATION
+Truck Capacity: 10 kg
+
+Brute Force
+-------------------------
+Total Weight: 10 kg
+Total Utility: 75
+Selected Items:
+Medicine | Weight: 2 kg | Utility: 10 | Priority: 10
+Food | Weight: 3 kg | Utility: 15 | Priority: 8
+Medical Kit | Weight: 2 kg | Utility: 12 | Priority: 10
+Clothes | Weight: 3 kg | Utility: 8 | Priority: 2
+
+Dynamic Programming
+-------------------------
+Total Weight: 10 kg
+Total Utility: 75
+Selected Items:
+Medicine | Weight: 2 kg | Utility: 10 | Priority: 10
+Food | Weight: 3 kg | Utility: 15 | Priority: 8
+Medical Kit | Weight: 2 kg | Utility: 12 | Priority: 10
+Clothes | Weight: 3 kg | Utility: 8 | Priority: 2
+
+Greedy
+-------------------------
+Total Weight: 10 kg
