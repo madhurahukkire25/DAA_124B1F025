@@ -1,0 +1,35 @@
+=== Initial Traffic Conditions ===
+
+Shortest travel times from intersection 0
+0 : 0 minutes
+1 : 3 minutes
+2 : 2 minutes
+3 : 8 minutes
+4 : 10 minutes
+5 : 13 minutes
+
+Nearest hospital: 4
+Minimum travel time: 10 minutes
+Optimal route: [0, 2, 1, 3, 4]
+
+Navigation:
+0 --> 2 --> 1 --> 3 --> 4
+
+=== After Traffic Update ===
+Traffic updated for road 0 <-> 2
+
+Shortest travel times from intersection 0
+0 : 0 minutes
+1 : 4 minutes
+2 : 5 minutes
+3 : 9 minutes
+4 : 11 minutes
+5 : 14 minutes
+
+Nearest hospital: 4
+Minimum travel time: 11 minutes
+Optimal route: [0, 1, 3, 4]
+
+Navigation:
+0 --> 1 --> 3 --> 4
+PS C:\Users\gamer\OneDrive\Desktop\daa\Assignments\Assignment4_Dijikstra> 
