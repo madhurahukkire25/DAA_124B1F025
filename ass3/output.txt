@@ -1,7 +1,45 @@
- { javac FrationalKnapsack.java } ; if ($?) { java FrationalKnapsack }
-Item 0 is taken completely
-Item 4 is taken completely
-Item 2 is taken completely
-Item 1 is taken fractionally
-255
-PS C:\Users\gamer\OneDrive\Desktop\daa\Assignments\Assignment3> 
+input : 
+5
+Medicine 10 100 1 false
+InfantMilk 20 60 3 true
+Rice 30 90 2 true
+Blankets 15 40 3 false
+Biscuits 5 50 1 false
+50
+
+output :
+=== Flood Relief Supply Allocation ===
+Total carrying capacity: 50 kg
+
+Item: Medicine
+Status: Taken completely
+Quantity taken: 10 kg
+Total quantity: 10 kg
+Fraction taken: 1/1 (100.00%)
+Relief value: 100.00
+
+Item: Biscuits
+Status: Taken completely
+Quantity taken: 5 kg
+Total quantity: 5 kg
+Fraction taken: 1/1 (100.00%)
+Relief value: 50.00
+
+Item: Rice
+Status: Taken completely
+Quantity taken: 30 kg
+Total quantity: 30 kg
+Fraction taken: 1/1 (100.00%)
+Relief value: 90.00
+
+Item: Infant Milk
+Status: Taken fractionally
+Quantity taken: 5 kg
+Total quantity: 20 kg
+Fraction taken: 5/20
+Percentage taken: 25.00%
+Relief value: 15.00
+
+=== Final Summary ===
+Total relief value: 255.00
+Remaining capacity: 0 kg
