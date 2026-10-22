@@ -1,4 +1,20 @@
 
+Input 
+
+Number of locations : 7
+Number of routes  : 9
+Warehouse to Hub-A, cost 5 : 0 1 5
+Source (Warehouse) : 0
+Destination (Destination) : 6
+Stage assigned to each location : 1 2 2 3 3 4 5
+Update route from Hub-A to Hub-D to cost 10 : 1 4 10
+Number of batch delivery requests : 4
+Warehouse to Destination : 0 6
+Warehouse to Delivery-Center : 0 5
+Hub-A to Destination : 1 6
+
+
+Hub-B to Destination
 Delivery Request 1
 Minimum delivery cost: 7
 Optimal route: 0 -> 1 -> 3 -> 5
