@@ -1,0 +1,58 @@
+input : 
+5
+S1 3 CS101 MATH201 PHY101
+S2 2 CS101 ENG101
+S3 3 MATH201 PHY101 ENG101
+S4 2 CS101 MATH201
+S5 2 CS201 PHY101
+
+3
+Room-A 60
+Room-B 50
+Room-C 40
+
+
+output : 
+
+========== CONFLICT GRAPH ==========
+CS101 -> [MATH201, PHY101, ENG101]
+MATH201 -> [CS101, PHY101, ENG101]
+PHY101 -> [CS101, MATH201, ENG101, CS201]
+ENG101 -> [CS101, MATH201, PHY101]
+CS201 -> [PHY101]
+
+Greedy -> 4 time slots
+Valid: true
+Slot 1: [CS101, CS201]
+Slot 2: [MATH201]
+Slot 3: [PHY101]
+Slot 4: [ENG101]
+
+Welsh-Powell -> 4 time slots
+Valid: true
+Slot 1: [PHY101]
+Slot 2: [CS101]
+Slot 3: [MATH201]
+Slot 4: [ENG101, CS201]
+
+DSATUR -> 4 time slots
+Valid: true
+Slot 1: [CS101, CS201]
+Slot 2: [MATH201]
+Slot 3: [PHY101]
+Slot 4: [ENG101]
+
+========== EXAM TIMETABLE ==========
+
+Time Slot 1
+CS101 | Students: 3 | Room: Room-A
+CS201 | Students: 1 | Room: Room-B
+
+Time Slot 2
+MATH201 | Students: 3 | Room: Room-A
+
+Time Slot 3
+PHY101 | Students: 3 | Room: Room-A
+
+Time Slot 4
+ENG101 | Students: 2 | Room: Room-A
